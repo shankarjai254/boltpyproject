@@ -24,6 +24,7 @@ pipeline {
                     python -m venv ${VENV}
                     . ${VENV}/bin/activate
                     python -m pip install --upgrade pip
+                    python -m pip install wheel
                     pip install -r requirements.txt
                 '''
             }
